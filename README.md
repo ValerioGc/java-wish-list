@@ -1,6 +1,8 @@
 # java-wish-list
 
-> Exercise about Java's ArrayLists
+> Exercise 1: Java's ArrayLists and Linked List. 
+> Exercise 1: Java's Sets and Maps. 
+
 
 <br />
 
