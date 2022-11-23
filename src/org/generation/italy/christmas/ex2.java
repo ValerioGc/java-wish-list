@@ -1,5 +1,7 @@
 package org.generation.italy.christmas;
 
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Scanner;
 
 public class ex2 {
@@ -8,12 +10,23 @@ public class ex2 {
 		System.out.println("Inserisci una parola");
 		String parola = scn.nextLine();
 		
-		char[] ArrayParola = parola.toCharArray();
+		String[] arrayParola = parola.split("");
 		
+		List <String> charlist = new LinkedList<>();
+
+		for (int i = 0; i < arrayParola.length; i++ ) {		
+			String actualChar = arrayParola[i];
+			
+			if (!charlist.contains(actualChar)) {
+				charlist.add(actualChar);
+			}
+		}
+		
+		
+		// Output
 		System.out.println("I caratteri della parola sono:");
-		
-		for (int i = 0; i < ArrayParola.length; i++ ) {
-			System.out.println("-" + ArrayParola[i]);
+		for (String el : charlist) {
+			System.out.println("- " + el);
 		}
 	}
 }
