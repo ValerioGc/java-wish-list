@@ -21,6 +21,7 @@ public class Main {
 			
 			wishList.add(cWish);
 							
+			System.out.println("Lunghezza lista: " + wishList.size() + " elementi");
 			System.out.println("Vuoi aggiungere altro alla wishlist? (1 - si | 2 - no");
 			uChoice = scn2.nextInt();		
 		}
@@ -30,9 +31,8 @@ public class Main {
 		Collections.sort(wishList);  
 		
 		for (String wish : wishList) {
-			System.out.println("Desiderio : " + wish + "\n-----------------");
+			System.out.println("Desiderio : " + wish + "\n--------------------");
 		}
 		
-		System.out.println("Lunghezza lista: " + wishList.size() + " elementi");
 	}
 }
