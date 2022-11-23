@@ -2,12 +2,23 @@ package org.generation.italy.christmas;
 
 import java.util.Scanner;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.LinkedList;
-import java.util.List;
 
 public class Main {
 
 	public static void main(String[] args) {
+		
+		public static class StringComparator implements Comparator<String> {
+
+			@Override
+			public int compare(String o1, String o2) {
+				
+				// TODO Auto-generated method stub
+				return 0;
+			}
+			
+		}
 
 		LinkedList<String> wishList = new LinkedList<>();
 		Scanner scn = new Scanner(System.in);
@@ -32,9 +43,6 @@ public class Main {
 		
 		for (String wish : wishList) {
 			System.out.println("Desiderio : " + wish + "\n--------------------");
-			
-			
-			
 		}
 		
 	}
