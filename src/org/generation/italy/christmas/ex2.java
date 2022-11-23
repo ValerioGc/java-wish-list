@@ -9,7 +9,7 @@ public class ex2 {
 		Scanner scn = new Scanner(System.in);
 		System.out.println("Inserisci una parola");
 		String parola = scn.nextLine();
-		
+		scn.close();
 		String[] arrayParola = parola.split("");
 		
 		List <String> charlist = new LinkedList<>();
