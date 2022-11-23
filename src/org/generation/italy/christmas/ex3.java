@@ -24,10 +24,6 @@ public class ex3 {
 				arrayP.put(chr, occCount);
 			}
 		}
-
-		System.out.println("I caratteri della parola sono:");
-		for (String el : arrayP) {
-			System.out.println("- " + el);
-		}
+		System.out.println(arrayP);
 	}
 }
