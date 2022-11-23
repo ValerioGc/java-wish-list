@@ -21,8 +21,7 @@ public class ex2 {
 				charlist.add(actualChar);
 			}
 		}
-		
-		
+		charlist.sort(null);
 		// Output
 		System.out.println("I caratteri della parola sono:");
 		for (String el : charlist) {
