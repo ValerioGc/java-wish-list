@@ -15,23 +15,24 @@ public class Main {
 		
 		while (uChoice != 2){
 			
-			System.out.println("Inserisci desiderio nella wishlist:");
-			String cWish = scn.nextLine();		
-			wishList.add(cWish);
-			
-		
-			Collections.sort(wishList);  
-			
-			for (String wish : wishList) {
-				System.out.println("Desideriod: " + wish);
+			try {
+				System.out.println("Inserisci desiderio nella wishlist:");
+				String cWish = scn.nextLine();		
+				
+				wishList.add(cWish);
+				
+				System.out.println("Vuoi aggiungere altro alla wishlist? (1 - si | 2 - no");
+				uChoice = scn.nextInt();	
+			} catch (Exception e) {
+				System.out.println("Inserisci il comando correttamente: (1 = si | 2 = no)");
 			}
-			
-			System.out.println("Lunghezza lista: " + wishList.size() + " elementi");
-			
-			wishList.add("Vuoi aggiungere altro alla wishlist? (1 - si | 2 - no");
-			uChoice = scn.nextInt();	
-		
 		}
-	scn.close();
+		Collections.sort(wishList);  
+		for (String wish : wishList) {
+			System.out.println("Desiderio : " + wish + "\n-----------------");
+		}
+		
+		System.out.println("Lunghezza lista: " + wishList.size() + " elementi");
+		scn.close();
 	}
 }
