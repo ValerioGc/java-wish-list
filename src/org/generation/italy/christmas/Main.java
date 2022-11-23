@@ -11,23 +11,22 @@ public class Main {
 
 		List<String> wishList = new ArrayList<>();
 		Scanner scn = new Scanner(System.in);
+		Scanner scn2 = new Scanner(System.in);
 		int uChoice = 0;
 		
 		while (uChoice != 2){
 			
-			try {
-				System.out.println("Inserisci desiderio nella wishlist:");
-				String cWish = scn.nextLine();		
-				
-				wishList.add(cWish);
-				
-				System.out.println("Vuoi aggiungere altro alla wishlist? (1 - si | 2 - no");
-				uChoice = scn.nextInt();	
-			} catch (Exception e) {
-				System.out.println("Inserisci il comando correttamente: (1 = si | 2 = no)");
-			}
+			System.out.println("Inserisci desiderio nella wishlist:");
+			String cWish = scn.nextLine();		
+			
+			wishList.add(cWish);
+							
+			System.out.println("Vuoi aggiungere altro alla wishlist? (1 - si | 2 - no");
+			uChoice = scn2.nextInt();		
 		}
+		
 		Collections.sort(wishList);  
+		
 		for (String wish : wishList) {
 			System.out.println("Desiderio : " + wish + "\n-----------------");
 		}
