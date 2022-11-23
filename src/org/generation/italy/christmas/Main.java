@@ -1,15 +1,15 @@
 package org.generation.italy.christmas;
 
 import java.util.Scanner;
-import java.util.ArrayList;
 import java.util.Collections;
+import java.util.LinkedList;
 import java.util.List;
 
 public class Main {
 
 	public static void main(String[] args) {
 
-		List<String> wishList = new ArrayList<>();
+		LinkedList<String> wishList = new LinkedList<>();
 		Scanner scn = new Scanner(System.in);
 		Scanner scn2 = new Scanner(System.in);
 		int uChoice = 0;
@@ -32,6 +32,9 @@ public class Main {
 		
 		for (String wish : wishList) {
 			System.out.println("Desiderio : " + wish + "\n--------------------");
+			
+			
+			
 		}
 		
 	}
