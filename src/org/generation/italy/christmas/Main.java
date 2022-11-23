@@ -24,6 +24,8 @@ public class Main {
 			System.out.println("Vuoi aggiungere altro alla wishlist? (1 - si | 2 - no");
 			uChoice = scn2.nextInt();		
 		}
+		scn.close();
+		scn2.close();
 		
 		Collections.sort(wishList);  
 		
@@ -32,6 +34,5 @@ public class Main {
 		}
 		
 		System.out.println("Lunghezza lista: " + wishList.size() + " elementi");
-		scn.close();
 	}
 }
